@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+}
+#content {
+    border-collapse: collapse;
+    width: 100vw;
+}
+td, th {
+    border: 1px solid black;
+    width: 50px;
+}
+td:focus {
+    outline: none;
+}
+button {
+    padding: 0 5px;
+    background-color: darkorange;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.top {
+    background-color: greenyellow;
+    padding: 10px 10px 0 10px;
+}
+h3 {
+    width:100px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    display: inline-block;
+    text-align: center;
+    width:80vw;
+}
+#sheets > button {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

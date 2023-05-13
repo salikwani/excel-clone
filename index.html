@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Clone</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="top">
+        <h3></h3>
+        <h1>Excel Clone</h1><br>
+        <button id="cut">Cut</button>
+        <button id="copy">Copy</button>
+        <button id="paste">Paste</button>
+        <button id="bold">B</button>
+        <button id="italic"><em>I</em></button>
+        <button id="underline">U</button>
+        <select id="fonts">
+            <option value="serif">Serif</option>
+            <option value="sans-serif">Sans-Serif</option>
+            <option value="monospace">Monospace</option>
+            <option value="cursive">Cursive</option>
+            <option value="fanstasy">Fantasy</option>
+        </select>
+        <select id="font-size">
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+        </select>
+        <label for="background-color">Background Color</label>
+        <input type="color" id="background-color"/>
+        <label for="text-color">Text Color</label>
+        <input type="color" id="text-color"/>
+        <button id="left-align">Left-Align</button>
+        <button id="center">Center</button>
+        <button id="right-align">Right-Align</button>
+        <button onclick="downloadJSON()">Download</button>
+        <input id="upload" type="file" accept=".json"/><br><br>
+        <button id="add-sheet">Add Sheet</button>
+        <button id="del-sheet">Delete Sheet</button><br><br>
+        <div id="sheets"></div>
+</div>
+    <table id="content">
+        <thead>
+            <tr  id="content-header">
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="content-body">
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
